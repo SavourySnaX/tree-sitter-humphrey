@@ -1,0 +1,37 @@
+========================
+simple global bit definition
+========================
+
+IAmAGlobal:bit=0
+
+------------------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (type_definition
+    (identifier_list
+     (identifier))
+    (type
+     (bit_type)))
+   (expression
+    (number)))))
+
+========================
+alternate global bit definition
+========================
+
+IAmAGlobal:=0
+
+------------------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (number)))))
+
+
+

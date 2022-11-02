@@ -1,0 +1,17 @@
+============
+addition
+============
+
+a:=1+2
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (sum
+     (number)
+     (number))))))

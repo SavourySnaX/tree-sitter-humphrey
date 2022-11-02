@@ -1,0 +1,48 @@
+========================
+Using Statement Absolute
+========================
+
+using System::Types
+
+------------------------
+
+(source_file
+ (using_statement
+  (namespace
+   (filepath_component)
+   (filepath_component))))
+
+======================
+Using Statement Single
+======================
+
+using Test
+
+----------------------
+
+(source_file
+ (using_statement
+  (namespace
+   (filepath_component))))
+
+
+=========================
+Multiple Using Statements
+=========================
+
+using System::Tests
+
+using Utilities::List
+
+-------------------------
+
+(source_file
+ (using_statement
+  (namespace
+   (filepath_component)
+   (filepath_component)))
+ (using_statement
+  (namespace
+   (filepath_component)
+   (filepath_component))))
+

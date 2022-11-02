@@ -1,0 +1,14 @@
+{
+  "name": "tree-sitter-humphrey",
+  "version": "0.0.1",
+  "description": "tree-sitter module for humphrey",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "author": "Savoury SnaX",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.17.0"
+  }
+}
