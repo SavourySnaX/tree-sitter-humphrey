@@ -34,4 +34,50 @@ IAmAGlobal:=0
     (number)))))
 
 
+========================
+multiple global bit definition
+========================
+
+IAmAGlobal,Another,More:=0
+
+------------------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier)
+    (identifier)
+    (identifier))
+   (expression
+    (number)))))
+
+
+========================
+multiple global [8]bit definition
+========================
+
+IAmAGlobal,Another,More:[8]bit=0
+
+------------------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (type_definition
+    (identifier_list
+     (identifier)
+     (identifier)
+     (identifier))
+    (type
+     (array_type
+      (array_size
+       (number))
+      (type
+       (bit_type)))))
+   (expression
+    (number)))))
+
+
+
 

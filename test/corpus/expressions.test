@@ -15,3 +15,126 @@ a:=1+2
     (sum
      (number)
      (number))))))
+
+============
+subtraction
+============
+
+a:=1-2
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (subtraction
+     (number)
+     (number))))))
+
+============
+multiplication
+============
+
+a:=1*2
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (product
+     (number)
+     (number))))))
+
+============
+division
+============
+
+a:=1/2
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (division
+     (number)
+     (number))))))
+
+============
+modulus
+============
+
+a:=1%2
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (modulus
+     (number)
+     (number))))))
+
+=============
+addition with multiplication
+=============
+
+a:=1+2*3
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (sum
+     (number)
+     (product
+      (number)
+      (number)))))))
+
+=============
+bodmas
+=============
+
+a:=1+2*3/4+(5+6-2)
+
+-------------
+
+(source_file
+ (global_variable_definition
+  (variable_definition
+   (identifier_list
+    (identifier))
+   (expression
+    (sum
+     (sum
+      (number)
+      (division
+       (product
+        (number)
+        (number))
+       (number)))
+     (bracketed
+      (subtraction
+       (sum
+        (number)
+        (number))
+       (number))))))))
+
+

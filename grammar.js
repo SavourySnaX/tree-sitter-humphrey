@@ -236,17 +236,28 @@ module.exports = grammar({
 
         expression: $ => $._expression,
         _expression: $ => choice(
+            $.bracketed,
             $.identifier,
             $.number,
             $.string,
             $.function_call,
             $.subscript,
             $.address_of,
+            $.dereference,
             $.assignment,
             $.dot,
             $.as,
             $.sum,
+            $.subtraction,
+            $.division,
+            $.modulus,
             $.product,
+        ),
+
+        bracketed: $ => seq(
+            "(",
+            $._expression,
+            ")",
         ),
 
         subscript: $ => prec.right(seq(
@@ -258,6 +269,11 @@ module.exports = grammar({
 
         address_of: $ => prec.left(seq(
             "&",
+            $._expression
+        )),
+
+        dereference: $ => prec.left(seq(
+            "*",
             $._expression
         )),
 
@@ -312,6 +328,31 @@ module.exports = grammar({
                 field("right", $._expression),
             ),
         ),
+        subtraction: $ => prec.left(
+            "addition",
+            seq(
+                field("left", $._expression),
+                "-",
+                field("right", $._expression),
+            ),
+        ),
+        division: $ => prec.left(
+            "multiplication",
+            seq(
+                field("left", $._expression),
+                "/",
+                field("right", $._expression),
+            ),
+        ),
+        modulus: $ => prec.left(
+            "multiplication",
+            seq(
+                field("left", $._expression),
+                "%",
+                field("right", $._expression),
+            ),
+        ),
+
         product: $ => prec.left(
             "multiplication",
             seq(
