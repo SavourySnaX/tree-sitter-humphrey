@@ -957,7 +957,7 @@
     },
     "filepath_component": {
       "type": "PATTERN",
-      "value": "\\p{L}+"
+      "value": "[\\p{L}\\p{Nd}_]+"
     },
     "identifier": {
       "type": "TOKEN",

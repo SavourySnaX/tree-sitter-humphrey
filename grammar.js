@@ -327,7 +327,7 @@ module.exports = grammar({
 
         number: _ => /-?[\p{Nd}][\p{Nd}_]*/u,    // Todo hex,binary,subscript,\_ encoding
         string: _ => /".*"/u,
-        filepath_component: _ => /\p{L}+/u,  // Todo, needs to include ALL valid filename characters
+        filepath_component: _ => /[\p{L}\p{Nd}_]+/u,  // Todo, needs to include ALL valid filename characters
         identifier: _ => token(/[\p{L}\p{Nd}_]+/u), // Todo, must not match number, must not match single _
     }
 });

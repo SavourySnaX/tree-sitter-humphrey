@@ -407,6 +407,11 @@
     }
   },
   {
+    "type": "filepath_component",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "function_call",
     "named": true,
     "fields": {},
@@ -500,6 +505,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "identifier_list",
@@ -1178,14 +1188,6 @@
   {
     "type": "else",
     "named": false
-  },
-  {
-    "type": "filepath_component",
-    "named": true
-  },
-  {
-    "type": "identifier",
-    "named": true
   },
   {
     "type": "if",
