@@ -13,27 +13,32 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "function_definition"
-        },
-        {
-          "type": "SYMBOL",
           "name": "using_statement"
         },
         {
           "type": "SYMBOL",
-          "name": "type_definition"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "global_variable_definition"
+          "name": "_definition_or_type"
         }
       ]
     },
-    "global_variable_definition": {
-      "type": "SYMBOL",
-      "name": "variable_definition"
+    "_definition_or_type": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "variable_definition"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "function_definition"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "type_definition"
+        }
+      ]
     },
-    "function_definition": {
+    "variable_definition": {
       "type": "SEQ",
       "members": [
         {
@@ -49,13 +54,37 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "identifier"
+              "name": "type"
             },
             {
-              "type": "SYMBOL",
-              "name": "function_type"
+              "type": "BLANK"
             }
           ]
+        },
+        {
+          "type": "STRING",
+          "value": "="
+        },
+        {
+          "type": "SYMBOL",
+          "name": "expression"
+        }
+      ]
+    },
+    "function_definition": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "identifier_list"
+        },
+        {
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "type"
         },
         {
           "type": "STRING",
@@ -201,69 +230,22 @@
         }
       ]
     },
-    "variable_definition": {
-      "type": "CHOICE",
+    "type_definition": {
+      "type": "SEQ",
       "members": [
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "type_definition"
-            },
-            {
-              "type": "STRING",
-              "value": "="
-            },
-            {
-              "type": "SYMBOL",
-              "name": "expression"
-            }
-          ]
+          "type": "SYMBOL",
+          "name": "identifier_list"
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "identifier_list"
-            },
-            {
-              "type": "STRING",
-              "value": ":"
-            },
-            {
-              "type": "STRING",
-              "value": "="
-            },
-            {
-              "type": "SYMBOL",
-              "name": "expression"
-            }
-          ]
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "type"
         }
       ]
-    },
-    "type_definition": {
-      "type": "PREC_LEFT",
-      "value": 0,
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "identifier_list"
-          },
-          {
-            "type": "STRING",
-            "value": ":"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "type"
-          }
-        ]
-      }
     },
     "identifier_list": {
       "type": "SEQ",
@@ -291,45 +273,41 @@
       ]
     },
     "type": {
-      "type": "PREC_RIGHT",
-      "value": 0,
-      "content": {
-        "type": "CHOICE",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "array_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "pointer_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "struct_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "enum_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "alias_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "function_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "bit_type"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "identifier"
-          }
-        ]
-      }
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "array_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pointer_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "struct_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "enum_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "alias_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "function_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bit_type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "identifier"
+        }
+      ]
     },
     "function_type": {
       "type": "SEQ",

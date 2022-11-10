@@ -854,15 +854,11 @@
           "named": true
         },
         {
-          "type": "function_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
           "type": "identifier_list",
+          "named": true
+        },
+        {
+          "type": "type",
           "named": true
         }
       ]
@@ -882,21 +878,6 @@
         },
         {
           "type": "output_parameters",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "global_variable_definition",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "variable_definition",
           "named": true
         }
       ]
@@ -1325,15 +1306,15 @@
           "named": true
         },
         {
-          "type": "global_variable_definition",
-          "named": true
-        },
-        {
           "type": "type_definition",
           "named": true
         },
         {
           "type": "using_statement",
+          "named": true
+        },
+        {
+          "type": "variable_definition",
           "named": true
         }
       ]
@@ -1880,7 +1861,7 @@
           "named": true
         },
         {
-          "type": "type_definition",
+          "type": "type",
           "named": true
         }
       ]

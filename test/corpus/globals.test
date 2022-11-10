@@ -1,83 +1,123 @@
-========================
+================================================================================
 simple global bit definition
-========================
+================================================================================
 
 IAmAGlobal:bit=0
 
-------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (global_variable_definition
-  (variable_definition
-   (type_definition
-    (identifier_list
-     (identifier))
-    (type
-     (bit_type)))
-   (expression
-    (number)))))
+ (variable_definition
+  (identifier_list
+   (identifier))
+  (type
+   (bit_type))
+  (expression
+   (number))))
 
-========================
+================================================================================
+simple global var definition
+================================================================================
+
+IAmAGlobal:ident=0
+
+--------------------------------------------------------------------------------
+
+(source_file
+ (variable_definition
+  (identifier_list
+   (identifier))
+  (type
+   (identifier))
+  (expression
+   (number))))
+
+================================================================================
 alternate global bit definition
-========================
+================================================================================
 
 IAmAGlobal:=0
 
-------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (global_variable_definition
-  (variable_definition
-   (identifier_list
-    (identifier))
-   (expression
-    (number)))))
+ (variable_definition
+  (identifier_list
+   (identifier))
+  (expression
+   (number))))
 
-
-========================
+================================================================================
 multiple global bit definition
-========================
+================================================================================
 
 IAmAGlobal,Another,More:=0
 
-------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (global_variable_definition
-  (variable_definition
-   (identifier_list
-    (identifier)
-    (identifier)
-    (identifier))
-   (expression
-    (number)))))
+ (variable_definition
+  (identifier_list
+   (identifier)
+   (identifier)
+   (identifier))
+  (expression
+   (number))))
 
-
-========================
+================================================================================
 multiple global [8]bit definition
-========================
+================================================================================
 
 IAmAGlobal,Another,More:[8]bit=0
 
-------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (global_variable_definition
-  (variable_definition
-   (type_definition
-    (identifier_list
-     (identifier)
-     (identifier)
-     (identifier))
-    (type
-     (array_type
-      (array_size
-       (number))
+ (variable_definition
+  (identifier_list
+   (identifier)
+   (identifier)
+   (identifier))
+  (type
+   (array_type
+    (array_size
+     (number))
       (type
-       (bit_type)))))
-   (expression
-    (number)))))
+       (bit_type))))
+  (expression
+   (number))))
 
+================================================================================
+simple function definition
+================================================================================
 
+main:()()={}
 
+--------------------------------------------------------------------------------
+
+(source_file
+  (function_definition
+    (identifier_list
+      (identifier))
+    (type
+     (function_type
+      (input_parameters)
+      (output_parameters)))
+    (block)))
+
+================================================================================
+simple named function type definition
+================================================================================
+
+main:Bob={}
+
+--------------------------------------------------------------------------------
+
+(source_file
+ (function_definition
+  (identifier_list
+   (identifier))
+  (type
+   (identifier))
+  (block)))
 

@@ -23,21 +23,28 @@ module.exports = grammar({
         source_file: $ => repeat($._global_definition),
 
         _global_definition: $=> choice(
-            $.function_definition,
             $.using_statement,
-            $.type_definition,
-            $.global_variable_definition,
+            $._definition_or_type,
         ),
 
-        global_variable_definition: $ => $.variable_definition,
+        _definition_or_type: $ => choice(
+            $.variable_definition,
+            $.function_definition,
+            $.type_definition,
+        ),
+
+        variable_definition: $ => seq(
+            $.identifier_list,
+            ":",
+            optional($.type),
+            "=",
+            $.expression,
+        ),
 
         function_definition: $ => seq(
             $.identifier_list,
             ":",
-            choice(
-                $.identifier,
-                $.function_type,
-            ),
+            $.type, // Type cannot be optional strictly speaking, it can only be (identifer or func type), but this keeps the grammar parsing correctly
             "=",
             $.block,
         ),
@@ -88,25 +95,11 @@ module.exports = grammar({
             ";",
         ),
 
-        variable_definition: $ => choice(
-            seq(
-                $.type_definition,
-                "=",
-                $.expression,
-            ),
-            seq(
-                $.identifier_list,
-                ":",
-                "=",
-                $.expression,
-            ),
-        ),
-
-        type_definition: $ => prec.left(seq(
+        type_definition: $ => seq(
             $.identifier_list,
             ":",
             $.type,
-        )),
+        ),
 
         identifier_list: $ => seq(
             $.identifier,
@@ -118,7 +111,7 @@ module.exports = grammar({
             )
         ),
 
-        type: $ => prec.right(choice(
+        type: $ => choice(
             $.array_type,
             $.pointer_type,
             $.struct_type,
@@ -127,7 +120,7 @@ module.exports = grammar({
             $.function_type,
             $.bit_type,
             $.identifier,
-        )),
+        ),
 
         function_type: $ => seq(
             '(',
