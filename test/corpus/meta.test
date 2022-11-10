@@ -1,0 +1,67 @@
+================================================================================
+c style import
+================================================================================
+
+[C_CALLING_CONVENTION]
+main:()()
+
+--------------------------------------------------------------------------------
+
+(source_file
+ (type_definition
+  (meta_list
+   (meta_item))
+  (identifier_list
+   (identifier))
+  (type
+   (function_type
+    (input_parameters)
+    (output_parameters)))))
+
+=====================
+meta on function
+=====================
+
+[COMPILE_TIME]
+WrappedAdd:(a:Int8,b:Int8)(out:Int8)=
+{
+  out=a+b;
+}
+
+---------------------
+
+(source_file
+ (function_definition
+  (meta_list
+   (meta_item))
+  (identifier_list
+   (identifier))
+  (type
+   (function_type
+    (input_parameters
+     (type_definition
+      (identifier_list
+       (identifier))
+      (type
+       (identifier)))
+     (type_definition
+      (identifier_list
+       (identifier))
+      (type
+       (identifier))))
+    (output_parameters
+     (type_definition
+      (identifier_list
+       (identifier))
+      (type
+       (identifier))))))
+  (block
+   (statement
+    (statement_expression
+     (expression
+      (sum
+       (assignment
+        (identifier)
+        (identifier))
+       (identifier))))))))
+

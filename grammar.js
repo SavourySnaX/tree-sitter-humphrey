@@ -34,6 +34,7 @@ module.exports = grammar({
         ),
 
         variable_definition: $ => seq(
+            optional($.meta_list),
             $.identifier_list,
             ":",
             optional($.type),
@@ -42,9 +43,10 @@ module.exports = grammar({
         ),
 
         function_definition: $ => seq(
+            optional($.meta_list),
             $.identifier_list,
             ":",
-            $.type, // Type cannot be optional strictly speaking, it can only be (identifer or func type), but this keeps the grammar parsing correctly
+            $.type, // Type cannot be optional, strictly speaking it can only be (identifer or func type), but this keeps the grammar parsing correctly
             "=",
             $.block,
         ),
@@ -96,9 +98,14 @@ module.exports = grammar({
         ),
 
         type_definition: $ => seq(
+            optional($.meta_list),
             $.identifier_list,
             ":",
             $.type,
+        ),
+
+        meta_list: $ => repeat1(
+            $.meta_item,
         ),
 
         identifier_list: $ => seq(
@@ -363,5 +370,6 @@ module.exports = grammar({
         string: _ => /".*"/u,
         filepath_component: _ => /[\p{L}\p{Nd}_]+/u,  // Todo, needs to include ALL valid filename characters
         identifier: _ => token(/[\p{L}\p{Nd}_]+/u), // Todo, must not match number, must not match single _
+        meta_item: _ => /\[[^\]]+\]/u,
     }
 });

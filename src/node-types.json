@@ -858,6 +858,10 @@
           "named": true
         },
         {
+          "type": "meta_list",
+          "named": true
+        },
+        {
           "type": "type",
           "named": true
         }
@@ -951,6 +955,21 @@
       "types": [
         {
           "type": "variable_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "meta_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "meta_item",
           "named": true
         }
       ]
@@ -1823,6 +1842,10 @@
           "named": true
         },
         {
+          "type": "meta_list",
+          "named": true
+        },
+        {
           "type": "type",
           "named": true
         }
@@ -1858,6 +1881,10 @@
         },
         {
           "type": "identifier_list",
+          "named": true
+        },
+        {
+          "type": "meta_list",
           "named": true
         },
         {
@@ -1973,6 +2000,10 @@
   {
     "type": "if",
     "named": false
+  },
+  {
+    "type": "meta_item",
+    "named": true
   },
   {
     "type": "number",
