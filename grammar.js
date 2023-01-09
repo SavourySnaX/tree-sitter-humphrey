@@ -112,7 +112,7 @@ module.exports = grammar({
             $.identifier,
             repeat(
                 seq(
-                    ',',
+                    $._comma,
                     $.identifier,
                 )
             )
@@ -142,7 +142,7 @@ module.exports = grammar({
                     $.type_definition,
                     repeat(
                         seq(
-                            ',',
+                            $._comma,
                             $.type_definition,
                         )
                     ),
@@ -157,7 +157,7 @@ module.exports = grammar({
                     $.type_definition,
                     repeat(
                         seq(
-                            ',',
+                            $._comma,
                             $.type_definition,
                         )
                     ),
@@ -219,7 +219,7 @@ module.exports = grammar({
         ),
 
         using_statement: $ => seq(
-            'using',
+            $._using,
             $.namespace,
         ),
 
@@ -229,7 +229,7 @@ module.exports = grammar({
         ),
 
         _rest_of_namespace: $ => seq(
-            '::',
+            $._coloncolon,
             $.filepath_component,
         ),
 
@@ -301,7 +301,7 @@ module.exports = grammar({
                     $.expression,
                     repeat(
                         seq(
-                            ',',
+                            $._comma,
                             $.expression,
                         )
                     ),
@@ -371,5 +371,10 @@ module.exports = grammar({
         filepath_component: _ => /[\p{L}\p{Nd}_]+/u,  // Todo, needs to include ALL valid filename characters
         identifier: _ => token(/[\p{L}\p{Nd}_]+/u), // Todo, must not match number, must not match single _
         meta_item: _ => /\[[^\]]+\]/u,
+        
+        _comma: _ => ',',
+        _coloncolon: _ => "::",
+        _using: _ => "using",
+
     }
 });
