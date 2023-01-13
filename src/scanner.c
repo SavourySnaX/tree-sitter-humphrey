@@ -21,6 +21,8 @@ bool tree_sitter_humphrey_external_scanner_scan(void *payload, TSLexer *lexer,
 
   while (iswspace(lexer->lookahead) || lexer->lookahead==0xA0 || lexer->lookahead==0xFEFF || lexer->lookahead==0x3000) lexer->advance(lexer, true);
 
+
+// Block Comments
   if (lexer->lookahead == '#') {
     advance(lexer);
     if (lexer->lookahead != '!') return false;
