@@ -3,8 +3,12 @@ module.exports = grammar({
 
     precedences: _ => [
         [
+            "postfix",
+            "prefix",
+            "unary",
             "multiplication",
             "addition",
+            "condition",
             "as",
         ],
     ],
@@ -36,7 +40,7 @@ module.exports = grammar({
         variable_definition: $ => seq(
             optional($.meta_list),
             $.identifier_list,
-            ":",
+            $._colon,
             optional($.type),
             "=",
             $.expression,
@@ -45,7 +49,7 @@ module.exports = grammar({
         function_definition: $ => seq(
             optional($.meta_list),
             $.identifier_list,
-            ":",
+            $._colon,
             $.type, // Type cannot be optional, strictly speaking it can only be (identifer or func type), but this keeps the grammar parsing correctly
             "=",
             $.block,
@@ -62,6 +66,7 @@ module.exports = grammar({
             $.return_keyword,
             $.if_statement,
             $.while_statement,
+            $.for_statement,
             $.statement_expression,
         ),
 
@@ -90,6 +95,16 @@ module.exports = grammar({
             $.block,
         ),
 
+        for_statement: $ => seq(
+            "for",
+            $.identifier_list,
+            "=",
+            $.expression,
+            "..",
+            $.expression,
+            $.block,
+        ),
+
         return_keyword: $ => "return;",
 
         local_variable_definition: $ => seq(
@@ -100,7 +115,7 @@ module.exports = grammar({
         type_definition: $ => seq(
             optional($.meta_list),
             $.identifier_list,
-            ":",
+            $._colon,
             $.type,
         ),
 
@@ -190,7 +205,7 @@ module.exports = grammar({
 
         enum_member: $ => seq(
             $.identifier_list,
-            ":",
+            $._colon,
             "=",
             $.expression,
         ),
@@ -203,7 +218,7 @@ module.exports = grammar({
 
         struct_member: $ => seq(
             $.identifier_list,
-            ":",
+            $._colon,
             $.type,
         ),
 
@@ -252,6 +267,18 @@ module.exports = grammar({
             $.division,
             $.modulus,
             $.product,
+            $.cond_equal,
+            $.cond_not_equal,
+            $.cond_less,
+            $.cond_less_equal,
+            $.cond_greater,
+            $.cond_greater_equal,
+            $.cond_inver,
+            $.negate,
+            $.post_inc,
+            $.post_dec,
+            $.pre_inc,
+            $.pre_dec,
         ),
 
         bracketed: $ => seq(
@@ -267,12 +294,12 @@ module.exports = grammar({
             "]",
         )),
 
-        address_of: $ => prec.left(seq(
+        address_of: $ => prec.right("unary",seq(
             "&",
             $._expression
         )),
 
-        dereference: $ => prec.left(seq(
+        dereference: $ => prec.right("unary",seq(
             "*",
             $._expression
         )),
@@ -362,6 +389,91 @@ module.exports = grammar({
             ),
         ),
 
+        cond_inver: $ => prec.right("unary",seq(
+            "!",
+            field("expr", $._expression),
+        )),
+        
+        negate: $ => prec.right("unary",seq(
+            "-",
+            field("expr", $._expression),
+        )),
+        
+        pre_inc: $ => prec.right("prefix",seq(
+            "++",
+            field("expr", $._expression),
+        )),
+        
+        pre_dec: $ => prec.right("prefix",seq(
+            "--",
+            field("expr", $._expression),
+        )),
+        
+        post_inc: $ => prec.left("postfix",seq(
+            field("expr", $._expression),
+            "++",
+        )),
+        
+        post_dec: $ => prec.left("postfix",seq(
+            field("expr", $._expression),
+            "--",
+        )),
+
+        cond_equal: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                "==",
+                field("right", $._expression),
+            ),
+        ),
+        
+        cond_not_equal: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                "!=",
+                field("right", $._expression),
+            ),
+        ),
+        
+        cond_less: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                "<",
+                field("right", $._expression),
+            ),
+        ),
+
+        cond_greater: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                ">",
+                field("right", $._expression),
+            ),
+        ),
+
+        cond_less_equal: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                "<=",
+                field("right", $._expression),
+            ),
+        ),
+
+        cond_greater_equal: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                ">=",
+                field("right", $._expression),
+            ),
+        ),
+
+
         comment: $ => token(choice(
             seq('#', /[^\n\r]*/),
         )),
@@ -382,6 +494,7 @@ module.exports = grammar({
         
         _comma: _ => ',',
         _coloncolon: _ => "::",
+        _colon: _ => ":",
         _using: _ => "using",
 
     }

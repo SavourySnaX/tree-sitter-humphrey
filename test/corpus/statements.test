@@ -1,0 +1,110 @@
+================================================================================
+if
+================================================================================
+
+func:()()=
+{
+    if 0
+    {
+    }
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (function_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters)
+        (output_parameters)))
+    (block
+      (statement
+        (if_statement
+          (expression
+            (number))
+          (block))))))
+
+================================================================================
+while
+================================================================================
+
+func:()()=
+{
+    while 1
+    {
+    }
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (function_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters)
+        (output_parameters)))
+    (block
+      (statement
+        (while_statement
+          (expression
+            (number))
+          (block))))))
+
+================================================================================
+for
+================================================================================
+
+func:()()=
+{
+    for a=0..9
+    {
+    }
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (function_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters)
+        (output_parameters)))
+    (block
+      (statement
+        (for_statement
+          (identifier_list
+            (identifier))
+          (expression
+            (number))
+          (expression
+            (number))
+          (block))))))
+
+================================================================================
+return
+================================================================================
+
+func:()()=
+{
+    return;
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (function_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters)
+        (output_parameters)))
+    (block
+      (statement
+        (return_keyword)))))

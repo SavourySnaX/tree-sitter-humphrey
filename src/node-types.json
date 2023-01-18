@@ -24,6 +24,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -48,7 +76,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -152,6 +200,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -176,7 +252,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -238,6 +334,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -262,7 +386,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -328,6 +472,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -352,7 +524,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -376,6 +568,1582 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "cond_equal",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "cond_greater",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "cond_greater_equal",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "cond_inver",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "cond_less",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "cond_less_equal",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "cond_not_equal",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -403,6 +2171,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -427,7 +2223,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -478,6 +2294,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -502,7 +2346,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -548,6 +2412,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -572,7 +2464,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -624,6 +2536,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -648,7 +2588,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -752,6 +2712,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -776,7 +2764,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -806,6 +2814,29 @@
     "type": "filepath_component",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "for_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "identifier_list",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "function_call",
@@ -1000,6 +3031,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1024,7 +3083,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1070,6 +3149,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1094,7 +3201,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1137,6 +3264,130 @@
     }
   },
   {
+    "type": "negate",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "output_parameters",
     "named": true,
     "fields": {},
@@ -1167,10 +3418,10 @@
     }
   },
   {
-    "type": "product",
+    "type": "post_dec",
     "named": true,
     "fields": {
-      "left": {
+      "expr": {
         "multiple": false,
         "required": true,
         "types": [
@@ -1188,6 +3439,34 @@
           },
           {
             "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
             "named": true
           },
           {
@@ -1215,7 +3494,523 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "post_inc",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "pre_dec",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "pre_inc",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "product",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1261,6 +4056,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1285,7 +4108,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1347,6 +4190,10 @@
       "multiple": false,
       "required": true,
       "types": [
+        {
+          "type": "for_statement",
+          "named": true
+        },
         {
           "type": "if_statement",
           "named": true
@@ -1444,6 +4291,34 @@
           "named": true
         },
         {
+          "type": "cond_equal",
+          "named": true
+        },
+        {
+          "type": "cond_greater",
+          "named": true
+        },
+        {
+          "type": "cond_greater_equal",
+          "named": true
+        },
+        {
+          "type": "cond_inver",
+          "named": true
+        },
+        {
+          "type": "cond_less",
+          "named": true
+        },
+        {
+          "type": "cond_less_equal",
+          "named": true
+        },
+        {
+          "type": "cond_not_equal",
+          "named": true
+        },
+        {
           "type": "dereference",
           "named": true
         },
@@ -1468,7 +4343,27 @@
           "named": true
         },
         {
+          "type": "negate",
+          "named": true
+        },
+        {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "post_dec",
+          "named": true
+        },
+        {
+          "type": "post_inc",
+          "named": true
+        },
+        {
+          "type": "pre_dec",
+          "named": true
+        },
+        {
+          "type": "pre_inc",
           "named": true
         },
         {
@@ -1519,6 +4414,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1543,7 +4466,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1589,6 +4532,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1613,7 +4584,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1665,6 +4656,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1689,7 +4708,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1735,6 +4774,34 @@
             "named": true
           },
           {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
             "type": "dereference",
             "named": true
           },
@@ -1759,7 +4826,27 @@
             "named": true
           },
           {
+            "type": "negate",
+            "named": true
+          },
+          {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
             "named": true
           },
           {
@@ -1914,6 +5001,14 @@
     }
   },
   {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
     "type": "%",
     "named": false
   },
@@ -1938,7 +5033,15 @@
     "named": false
   },
   {
+    "type": "++",
+    "named": false
+  },
+  {
     "type": "-",
+    "named": false
+  },
+  {
+    "type": "--",
     "named": false
   },
   {
@@ -1946,11 +5049,11 @@
     "named": false
   },
   {
-    "type": "/",
+    "type": "..",
     "named": false
   },
   {
-    "type": ":",
+    "type": "/",
     "named": false
   },
   {
@@ -1958,7 +5061,27 @@
     "named": false
   },
   {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
     "type": "=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
     "named": false
   },
   {
@@ -1987,6 +5110,10 @@
   },
   {
     "type": "else",
+    "named": false
+  },
+  {
+    "type": "for",
     "named": false
   },
   {
