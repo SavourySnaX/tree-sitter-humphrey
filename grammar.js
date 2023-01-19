@@ -42,7 +42,7 @@ module.exports = grammar({
             $.identifier_list,
             $._colon,
             optional($.type),
-            "=",
+            $._equal,
             $.expression,
         ),
 
@@ -51,7 +51,7 @@ module.exports = grammar({
             $.identifier_list,
             $._colon,
             $.type, // Type cannot be optional, strictly speaking it can only be (identifer or func type), but this keeps the grammar parsing correctly
-            "=",
+            $._equal,
             $.block,
         ),
 
@@ -98,7 +98,7 @@ module.exports = grammar({
         for_statement: $ => seq(
             "for",
             $.identifier_list,
-            "=",
+            $._equal,
             $.expression,
             "..",
             $.expression,
@@ -206,7 +206,7 @@ module.exports = grammar({
         enum_member: $ => seq(
             $.identifier_list,
             $._colon,
-            "=",
+            $._equal,
             $.expression,
         ),
 
@@ -279,6 +279,7 @@ module.exports = grammar({
             $.post_dec,
             $.pre_inc,
             $.pre_dec,
+            $.underscore,
         ),
 
         bracketed: $ => seq(
@@ -306,7 +307,7 @@ module.exports = grammar({
 
         assignment: $ => prec.left(seq(
             $._expression,
-            "=",
+            $._equal,
             $._expression,
         )),
 
@@ -491,10 +492,12 @@ module.exports = grammar({
         filepath_component: _ => /[\p{L}\p{Nd}_]+/u,  // Todo, needs to include ALL valid filename characters
         identifier: _ => token(/[\p{L}\p{Nd}_]+/u), // Todo, must not match number, must not match single _
         meta_item: _ => /\[[^\]]+\]/u,
+        underscore: _ => '_',
         
         _comma: _ => ',',
         _coloncolon: _ => "::",
         _colon: _ => ":",
+        _equal: _ => "=",
         _using: _ => "using",
 
     }

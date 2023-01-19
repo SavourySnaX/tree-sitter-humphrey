@@ -74,8 +74,8 @@
           ]
         },
         {
-          "type": "STRING",
-          "value": "="
+          "type": "SYMBOL",
+          "name": "_equal"
         },
         {
           "type": "SYMBOL",
@@ -111,8 +111,8 @@
           "name": "type"
         },
         {
-          "type": "STRING",
-          "value": "="
+          "type": "SYMBOL",
+          "name": "_equal"
         },
         {
           "type": "SYMBOL",
@@ -253,8 +253,8 @@
           "name": "identifier_list"
         },
         {
-          "type": "STRING",
-          "value": "="
+          "type": "SYMBOL",
+          "name": "_equal"
         },
         {
           "type": "SYMBOL",
@@ -583,8 +583,8 @@
           "name": "_colon"
         },
         {
-          "type": "STRING",
-          "value": "="
+          "type": "SYMBOL",
+          "name": "_equal"
         },
         {
           "type": "SYMBOL",
@@ -819,6 +819,10 @@
         {
           "type": "SYMBOL",
           "name": "pre_dec"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "underscore"
         }
       ]
     },
@@ -909,8 +913,8 @@
             "name": "_expression"
           },
           {
-            "type": "STRING",
-            "value": "="
+            "type": "SYMBOL",
+            "name": "_equal"
           },
           {
             "type": "SYMBOL",
@@ -1545,6 +1549,10 @@
       "type": "PATTERN",
       "value": "\\[[^\\]]+\\]"
     },
+    "underscore": {
+      "type": "STRING",
+      "value": "_"
+    },
     "_comma": {
       "type": "STRING",
       "value": ","
@@ -1556,6 +1564,10 @@
     "_colon": {
       "type": "STRING",
       "value": ":"
+    },
+    "_equal": {
+      "type": "STRING",
+      "value": "="
     },
     "_using": {
       "type": "STRING",

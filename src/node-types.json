@@ -118,6 +118,10 @@
         {
           "type": "sum",
           "named": true
+        },
+        {
+          "type": "underscore",
+          "named": true
         }
       ]
     }
@@ -294,6 +298,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -427,6 +435,10 @@
         },
         {
           "type": "sum",
+          "named": true
+        },
+        {
+          "type": "underscore",
           "named": true
         }
       ]
@@ -566,6 +578,10 @@
         {
           "type": "sum",
           "named": true
+        },
+        {
+          "type": "underscore",
+          "named": true
         }
       ]
     }
@@ -689,6 +705,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -806,6 +826,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -931,6 +955,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -1048,6 +1076,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -1173,6 +1205,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -1290,6 +1326,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -1415,6 +1455,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       }
@@ -1539,6 +1583,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -1656,6 +1704,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -1781,6 +1833,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -1898,6 +1954,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -2023,6 +2083,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -2140,6 +2204,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -2265,6 +2333,10 @@
         {
           "type": "sum",
           "named": true
+        },
+        {
+          "type": "underscore",
+          "named": true
         }
       ]
     }
@@ -2388,6 +2460,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -2505,6 +2581,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -2629,6 +2709,10 @@
         },
         {
           "type": "sum",
+          "named": true
+        },
+        {
+          "type": "underscore",
           "named": true
         }
       ]
@@ -2805,6 +2889,10 @@
         },
         {
           "type": "sum",
+          "named": true
+        },
+        {
+          "type": "underscore",
           "named": true
         }
       ]
@@ -3125,6 +3213,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -3242,6 +3334,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -3381,6 +3477,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -3536,6 +3636,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       }
@@ -3659,6 +3763,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -3784,6 +3892,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       }
@@ -3907,6 +4019,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -4032,6 +4148,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -4149,6 +4269,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -4385,6 +4509,10 @@
         {
           "type": "sum",
           "named": true
+        },
+        {
+          "type": "underscore",
+          "named": true
         }
       ]
     }
@@ -4508,6 +4636,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -4625,6 +4757,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -4750,6 +4886,10 @@
           {
             "type": "sum",
             "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
           }
         ]
       },
@@ -4867,6 +5007,10 @@
           },
           {
             "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
             "named": true
           }
         ]
@@ -5069,10 +5213,6 @@
     "named": false
   },
   {
-    "type": "=",
-    "named": false
-  },
-  {
     "type": "==",
     "named": false
   },
@@ -5134,6 +5274,10 @@
   },
   {
     "type": "string",
+    "named": true
+  },
+  {
+    "type": "underscore",
     "named": true
   },
   {
