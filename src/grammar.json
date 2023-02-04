@@ -640,8 +640,8 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "STRING",
-            "value": "*"
+            "type": "SYMBOL",
+            "name": "_asterix"
           },
           {
             "type": "SYMBOL",
@@ -892,8 +892,8 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "STRING",
-            "value": "*"
+            "type": "SYMBOL",
+            "name": "_asterix"
           },
           {
             "type": "SYMBOL",
@@ -1163,8 +1163,8 @@
             }
           },
           {
-            "type": "STRING",
-            "value": "*"
+            "type": "SYMBOL",
+            "name": "_asterix"
           },
           {
             "type": "FIELD",
@@ -1572,6 +1572,10 @@
     "_using": {
       "type": "STRING",
       "value": "using"
+    },
+    "_asterix": {
+      "type": "STRING",
+      "value": "*"
     }
   },
   "extras": [

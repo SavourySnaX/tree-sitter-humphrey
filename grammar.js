@@ -225,7 +225,7 @@ module.exports = grammar({
         bit_type: $ => 'bit',
 
         pointer_type: $ => prec.left(seq(
-            '*',
+            $._asterix,
             $.type,
         )),
 
@@ -301,7 +301,7 @@ module.exports = grammar({
         )),
 
         dereference: $ => prec.right("unary",seq(
-            "*",
+            $._asterix,
             $._expression
         )),
 
@@ -385,7 +385,7 @@ module.exports = grammar({
             "multiplication",
             seq(
                 field("left", $._expression),
-                "*",
+                $._asterix,
                 field("right", $._expression),
             ),
         ),
@@ -499,6 +499,7 @@ module.exports = grammar({
         _colon: _ => ":",
         _equal: _ => "=",
         _using: _ => "using",
+        _asterix:_=> "*",
 
     }
 });
