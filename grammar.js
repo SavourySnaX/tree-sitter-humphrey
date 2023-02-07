@@ -182,9 +182,9 @@ module.exports = grammar({
         ),
 
         array_type: $ => prec.left(seq(
-            '[',
+            $._openSquare,
             $.array_size,
-            ']',
+            $._closeSquare,
             $.type,
         )),
 
@@ -290,9 +290,9 @@ module.exports = grammar({
 
         subscript: $ => prec.right(seq(
             $.identifier,
-            "[",
+            $._openSquare,
             $._expression,
-            "]",
+            $._closeSquare,
         )),
 
         address_of: $ => prec.right("unary",seq(
@@ -500,6 +500,8 @@ module.exports = grammar({
         _equal: _ => "=",
         _using: _ => "using",
         _asterix:_=> "*",
+        _openSquare:_=> "[",
+        _closeSquare:_=> "]",
 
     }
 });

@@ -501,16 +501,16 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "STRING",
-            "value": "["
+            "type": "SYMBOL",
+            "name": "_openSquare"
           },
           {
             "type": "SYMBOL",
             "name": "array_size"
           },
           {
-            "type": "STRING",
-            "value": "]"
+            "type": "SYMBOL",
+            "name": "_closeSquare"
           },
           {
             "type": "SYMBOL",
@@ -854,16 +854,16 @@
             "name": "identifier"
           },
           {
-            "type": "STRING",
-            "value": "["
+            "type": "SYMBOL",
+            "name": "_openSquare"
           },
           {
             "type": "SYMBOL",
             "name": "_expression"
           },
           {
-            "type": "STRING",
-            "value": "]"
+            "type": "SYMBOL",
+            "name": "_closeSquare"
           }
         ]
       }
@@ -1576,6 +1576,14 @@
     "_asterix": {
       "type": "STRING",
       "value": "*"
+    },
+    "_openSquare": {
+      "type": "STRING",
+      "value": "["
+    },
+    "_closeSquare": {
+      "type": "STRING",
+      "value": "]"
     }
   },
   "extras": [
