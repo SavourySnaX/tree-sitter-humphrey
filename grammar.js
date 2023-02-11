@@ -56,9 +56,9 @@ module.exports = grammar({
         ),
 
         block: $ => seq(
-            "{",
+            $._openCurly,
             repeat($.statement),
-            "}",
+            $._closeCurly,
         ),
 
         statement: $ => choice(
@@ -190,17 +190,17 @@ module.exports = grammar({
 
         alias_type: $ => seq(
             $.type,
-            '|',
-            '{',
+            $._verticalBar,
+            $._openCurly,
             repeat($.struct_member),
-            '}',
+            $._closeCurly,
         ),
 
         enum_type: $ => seq(
             $.type,
-            '{',
+            $._openCurly,
             repeat($.enum_member),
-            '}',
+            $._closeCurly,
         ),
 
         enum_member: $ => seq(
@@ -211,9 +211,9 @@ module.exports = grammar({
         ),
 
         struct_type: $ => seq(
-            '{',
+            $._openCurly,
             repeat($.struct_member),
-            '}',
+            $._closeCurly,
         ),
 
         struct_member: $ => seq(
@@ -502,6 +502,8 @@ module.exports = grammar({
         _asterix:_=> "*",
         _openSquare:_=> "[",
         _closeSquare:_=> "]",
-
+        _openCurly:_=> "{",
+        _closeCurly:_=> "}",
+        _verticalBar:_=> "|",
     }
 });

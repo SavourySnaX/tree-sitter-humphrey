@@ -124,8 +124,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "{"
+          "type": "SYMBOL",
+          "name": "_openCurly"
         },
         {
           "type": "REPEAT",
@@ -135,8 +135,8 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "}"
+          "type": "SYMBOL",
+          "name": "_closeCurly"
         }
       ]
     },
@@ -527,12 +527,12 @@
           "name": "type"
         },
         {
-          "type": "STRING",
-          "value": "|"
+          "type": "SYMBOL",
+          "name": "_verticalBar"
         },
         {
-          "type": "STRING",
-          "value": "{"
+          "type": "SYMBOL",
+          "name": "_openCurly"
         },
         {
           "type": "REPEAT",
@@ -542,8 +542,8 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "}"
+          "type": "SYMBOL",
+          "name": "_closeCurly"
         }
       ]
     },
@@ -555,8 +555,8 @@
           "name": "type"
         },
         {
-          "type": "STRING",
-          "value": "{"
+          "type": "SYMBOL",
+          "name": "_openCurly"
         },
         {
           "type": "REPEAT",
@@ -566,8 +566,8 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "}"
+          "type": "SYMBOL",
+          "name": "_closeCurly"
         }
       ]
     },
@@ -596,8 +596,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "{"
+          "type": "SYMBOL",
+          "name": "_openCurly"
         },
         {
           "type": "REPEAT",
@@ -607,8 +607,8 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "}"
+          "type": "SYMBOL",
+          "name": "_closeCurly"
         }
       ]
     },
@@ -1584,6 +1584,18 @@
     "_closeSquare": {
       "type": "STRING",
       "value": "]"
+    },
+    "_openCurly": {
+      "type": "STRING",
+      "value": "{"
+    },
+    "_closeCurly": {
+      "type": "STRING",
+      "value": "}"
+    },
+    "_verticalBar": {
+      "type": "STRING",
+      "value": "|"
     }
   },
   "extras": [
