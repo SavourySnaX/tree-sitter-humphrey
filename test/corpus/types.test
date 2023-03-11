@@ -1,149 +1,147 @@
-========================
+================================================================================
 simple bit type definition
-========================
+================================================================================
 
 bool:bit
 
-------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (bit_type))))
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (bit_type))))
 
-========================
+================================================================================
 multiple bit type definition
-========================
+================================================================================
 
 bool,boolean:bit
 
-------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier)
-   (identifier))
-  (type
-   (bit_type))))
+  (type_definition
+    (identifier_list
+      (identifier)
+      (identifier))
+    (type
+      (bit_type))))
 
-=========================
+================================================================================
 simple identifier type definition
-=========================
+================================================================================
 
 car:vehicle
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (identifier))))
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (identifier))))
 
-=========================
+================================================================================
 simple unsigned bit array
-=========================
+================================================================================
 
 byte:[8]bit
 
--------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (array_type
-    (array_size
-     (number))
+  (type_definition
+    (identifier_list
+      (identifier))
     (type
-     (bit_type))))))
+      (array_type
+        (array_size
+          (number))
+        (type
+          (bit_type))))))
 
-=========================
+================================================================================
 simple signed bit array
-=========================
+================================================================================
 
 byte:[-8]bit
 
--------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (array_type
-    (array_size
-     (number))
+  (type_definition
+    (identifier_list
+      (identifier))
     (type
-     (bit_type))))))
+      (array_type
+        (array_size
+          (number))
+        (type
+          (bit_type))))))
 
-
-=========================
+================================================================================
 simple byte array
-=========================
+================================================================================
 
 byte:[8][8]bit
 
--------------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (array_type
-    (array_size
-     (number))
+  (type_definition
+    (identifier_list
+      (identifier))
     (type
-     (array_type
-      (array_size
-       (number))
-     (type
-      (bit_type))))))))
+      (array_type
+        (array_size
+          (number))
+        (type
+          (array_type
+            (array_size
+              (number))
+            (type
+              (bit_type))))))))
 
-=========================
+================================================================================
 simple pointer type definition
-=========================
+================================================================================
 
 car:*vehicle
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (pointer_type
+  (type_definition
+    (identifier_list
+      (identifier))
     (type
-     (identifier))))))
+      (pointer_type
+        (type
+          (identifier))))))
 
-=========================
+================================================================================
 empty struct
-=========================
+================================================================================
 
 void:
 {
 }
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (struct_type))))
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (struct_type))))
 
-
-=========================
+================================================================================
 simple struct
-=========================
+================================================================================
 
 thing:
 {
@@ -151,32 +149,32 @@ thing:
     word:UInt16
 }
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (struct_type
-    (struct_member
-     (identifier_list
+  (type_definition
+    (identifier_list
       (identifier))
-     (type
-      (array_type
-       (array_size
-        (number))
-       (type 
-        (bit_type)))))
-    (struct_member
-     (identifier_list
-      (identifier))
-     (type
-      (identifier)))))))
+    (type
+      (struct_type
+        (struct_member
+          (identifier_list
+            (identifier))
+          (type
+            (array_type
+              (array_size
+                (number))
+              (type
+                (bit_type)))))
+        (struct_member
+          (identifier_list
+            (identifier))
+          (type
+            (identifier)))))))
 
-=========================
+================================================================================
 simple enum
-=========================
+================================================================================
 
 bool:bit
 {
@@ -184,30 +182,30 @@ bool:bit
     false:=1
 }
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (enum_type
+  (type_definition
+    (identifier_list
+      (identifier))
     (type
-     (bit_type))
-    (enum_member
-     (identifier_list
-      (identifier))
-     (expression
-      (number)))
-    (enum_member
-     (identifier_list
-      (identifier))
-     (expression
-      (number)))))))
+      (enum_type
+        (type
+          (bit_type))
+        (enum_member
+          (identifier_list
+            (identifier))
+          (expression
+            (number)))
+        (enum_member
+          (identifier_list
+            (identifier))
+          (expression
+            (number)))))))
 
-=========================
+================================================================================
 packed struct (alias)
-=========================
+================================================================================
 
 nibbles:[8]bit
 |{
@@ -215,118 +213,117 @@ nibbles:[8]bit
     nibbleBottom:[4]bit
 }
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (alias_type
-    (type
-     (array_type
-      (array_size
-       (number))
-      (type
-       (bit_type))))
-   (struct_member
+  (type_definition
     (identifier_list
-     (identifier))
+      (identifier))
     (type
-     (array_type
-      (array_size
-       (number))
-      (type
-       (bit_type)))))
-   (struct_member
-    (identifier_list
-     (identifier))
-    (type
-     (array_type
-      (array_size
-       (number))
-      (type
-       (bit_type)))))))))
+      (alias_type
+        (type
+          (array_type
+            (array_size
+              (number))
+            (type
+              (bit_type))))
+        (struct_type
+          (struct_member
+            (identifier_list
+              (identifier))
+            (type
+              (array_type
+                (array_size
+                  (number))
+                (type
+                  (bit_type)))))
+          (struct_member
+            (identifier_list
+              (identifier))
+            (type
+              (array_type
+                (array_size
+                  (number))
+                (type
+                  (bit_type))))))))))
 
-
-=========================
+================================================================================
 simple void function type
-=========================
+================================================================================
 
 myvoidfunc:()()
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (function_type
-    (input_parameters)
-    (output_parameters)))))
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters)
+        (output_parameters)))))
 
-=========================
+================================================================================
 multiple inputs function type
-=========================
+================================================================================
 
 myvoidfunc:(a:bit,b:bit)()
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (function_type
-    (input_parameters
-     (type_definition
-      (identifier_list
-       (identifier))
-      (type
-       (bit_type)))
-     (type_definition
-      (identifier_list
-       (identifier))
-      (type
-       (bit_type))))
-    (output_parameters)))))
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters
+          (type_definition
+            (identifier_list
+              (identifier))
+            (type
+              (bit_type)))
+          (type_definition
+            (identifier_list
+              (identifier))
+            (type
+              (bit_type))))
+        (output_parameters)))))
 
-=========================
+================================================================================
 multiple inputs & outputs function type
-=========================
+================================================================================
 
 myvoidfunc:(a:bit,b:bit)(result:bit,other:bit)
 
----------------------
+--------------------------------------------------------------------------------
 
 (source_file
- (type_definition
-  (identifier_list
-   (identifier))
-  (type
-   (function_type
-    (input_parameters
-     (type_definition
-      (identifier_list
-       (identifier))
-      (type
-       (bit_type)))
-     (type_definition
-      (identifier_list
-       (identifier))
-      (type
-       (bit_type))))
-    (output_parameters
-     (type_definition
-      (identifier_list
-       (identifier))
-      (type
-       (bit_type)))
-     (type_definition
-      (identifier_list
-       (identifier))
-      (type
-       (bit_type))))))))
-
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (function_type
+        (input_parameters
+          (type_definition
+            (identifier_list
+              (identifier))
+            (type
+              (bit_type)))
+          (type_definition
+            (identifier_list
+              (identifier))
+            (type
+              (bit_type))))
+        (output_parameters
+          (type_definition
+            (identifier_list
+              (identifier))
+            (type
+              (bit_type)))
+          (type_definition
+            (identifier_list
+              (identifier))
+            (type
+              (bit_type))))))))

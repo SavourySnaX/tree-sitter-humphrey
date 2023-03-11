@@ -145,9 +145,9 @@ module.exports = grammar({
         ),
 
         function_type: $ => seq(
-            '(',
+            $._openParen,
             $.input_parameters,
-            '(',
+            $._openParen,
             $.output_parameters,
         ),
 
@@ -163,7 +163,7 @@ module.exports = grammar({
                     ),
                 )
             ),
-            ')',
+            $._closeParen,
         ),
 
         output_parameters: $ => seq(
@@ -178,7 +178,7 @@ module.exports = grammar({
                     ),
                 )
             ),
-            ')',
+            $._closeParen,
         ),
 
         array_type: $ => prec.left(seq(
@@ -188,18 +188,18 @@ module.exports = grammar({
             $.type,
         )),
 
-        alias_type: $ => seq(
+        alias_type: $ => prec.left(seq(
             $.type,
-            $._verticalBar,
-            $._openCurly,
-            repeat($.struct_member),
-            $._closeCurly,
-        ),
+            repeat1(seq(
+                $._verticalBar,
+                $.struct_type,
+            )),
+        )),
 
         enum_type: $ => seq(
             $.type,
             $._openCurly,
-            repeat($.enum_member),
+            repeat1($.enum_member),
             $._closeCurly,
         ),
 
@@ -283,9 +283,9 @@ module.exports = grammar({
         ),
 
         bracketed: $ => seq(
-            "(",
+            $._openParen,
             $._expression,
-            ")",
+            $._closeParen,
         ),
 
         subscript: $ => prec.right(seq(
@@ -319,7 +319,7 @@ module.exports = grammar({
 
         function_call: $ => seq(
             $.identifier,
-            "(",
+            $._openParen,
             $.function_call_args,
         ),
 
@@ -335,7 +335,7 @@ module.exports = grammar({
                     ),
                 )
             ),
-            ')',
+            $._closeParen,
         ),
 
         as: $ => prec.left(
@@ -505,5 +505,7 @@ module.exports = grammar({
         _openCurly:_=> "{",
         _closeCurly:_=> "}",
         _verticalBar:_=> "|",
+        _openParen:_=> "(",
+        _closeParen:_=> ")",
     }
 });

@@ -393,16 +393,16 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "("
+          "type": "SYMBOL",
+          "name": "_openParen"
         },
         {
           "type": "SYMBOL",
           "name": "input_parameters"
         },
         {
-          "type": "STRING",
-          "value": "("
+          "type": "SYMBOL",
+          "name": "_openParen"
         },
         {
           "type": "SYMBOL",
@@ -447,8 +447,8 @@
           ]
         },
         {
-          "type": "STRING",
-          "value": ")"
+          "type": "SYMBOL",
+          "name": "_closeParen"
         }
       ]
     },
@@ -489,8 +489,8 @@
           ]
         },
         {
-          "type": "STRING",
-          "value": ")"
+          "type": "SYMBOL",
+          "name": "_closeParen"
         }
       ]
     },
@@ -520,32 +520,33 @@
       }
     },
     "alias_type": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "type"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_verticalBar"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_openCurly"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
+      "type": "PREC_LEFT",
+      "value": 0,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
             "type": "SYMBOL",
-            "name": "struct_member"
+            "name": "type"
+          },
+          {
+            "type": "REPEAT1",
+            "content": {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "_verticalBar"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "struct_type"
+                }
+              ]
+            }
           }
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_closeCurly"
-        }
-      ]
+        ]
+      }
     },
     "enum_type": {
       "type": "SEQ",
@@ -559,7 +560,7 @@
           "name": "_openCurly"
         },
         {
-          "type": "REPEAT",
+          "type": "REPEAT1",
           "content": {
             "type": "SYMBOL",
             "name": "enum_member"
@@ -830,16 +831,16 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "("
+          "type": "SYMBOL",
+          "name": "_openParen"
         },
         {
           "type": "SYMBOL",
           "name": "_expression"
         },
         {
-          "type": "STRING",
-          "value": ")"
+          "type": "SYMBOL",
+          "name": "_closeParen"
         }
       ]
     },
@@ -952,8 +953,8 @@
           "name": "identifier"
         },
         {
-          "type": "STRING",
-          "value": "("
+          "type": "SYMBOL",
+          "name": "_openParen"
         },
         {
           "type": "SYMBOL",
@@ -998,8 +999,8 @@
           ]
         },
         {
-          "type": "STRING",
-          "value": ")"
+          "type": "SYMBOL",
+          "name": "_closeParen"
         }
       ]
     },
@@ -1596,6 +1597,14 @@
     "_verticalBar": {
       "type": "STRING",
       "value": "|"
+    },
+    "_openParen": {
+      "type": "STRING",
+      "value": "("
+    },
+    "_closeParen": {
+      "type": "STRING",
+      "value": ")"
     }
   },
   "extras": [

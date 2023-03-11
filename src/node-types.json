@@ -135,7 +135,7 @@
       "required": true,
       "types": [
         {
-          "type": "struct_member",
+          "type": "struct_type",
           "named": true
         },
         {
@@ -5158,14 +5158,6 @@
   },
   {
     "type": "&",
-    "named": false
-  },
-  {
-    "type": "(",
-    "named": false
-  },
-  {
-    "type": ")",
     "named": false
   },
   {
