@@ -1532,8 +1532,21 @@
       }
     },
     "number": {
-      "type": "PATTERN",
-      "value": "-?[\\p{Nd}][\\p{Nd}_]*"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "-?[\\p{Nd}][\\p{Nd}_]*"
+        },
+        {
+          "type": "PATTERN",
+          "value": "0[xX][0-9a-fA-F_]*[0-9a-fA-F]+"
+        },
+        {
+          "type": "PATTERN",
+          "value": "0[bB][0-1_]*[0-1]+"
+        }
+      ]
     },
     "filepath_component": {
       "type": "PATTERN",
