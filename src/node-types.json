@@ -5221,14 +5221,6 @@
     "named": true
   },
   {
-    "type": "block_comment",
-    "named": true
-  },
-  {
-    "type": "comment",
-    "named": true
-  },
-  {
     "type": "else",
     "named": false
   },

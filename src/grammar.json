@@ -1478,7 +1478,7 @@
         ]
       }
     },
-    "comment": {
+    "_comment": {
       "type": "TOKEN",
       "content": {
         "type": "CHOICE",
@@ -1610,7 +1610,7 @@
   "extras": [
     {
       "type": "SYMBOL",
-      "name": "comment"
+      "name": "_comment"
     },
     {
       "type": "PATTERN",
@@ -1618,7 +1618,7 @@
     },
     {
       "type": "SYMBOL",
-      "name": "block_comment"
+      "name": "_block_comment"
     }
   ],
   "conflicts": [],
@@ -1657,7 +1657,7 @@
   "externals": [
     {
       "type": "SYMBOL",
-      "name": "block_comment"
+      "name": "_block_comment"
     }
   ],
   "inline": [],

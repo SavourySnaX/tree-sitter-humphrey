@@ -14,13 +14,13 @@ module.exports = grammar({
     ],
 
     extras: $ => [
-        $.comment,
+        $._comment,
         /[\s\u00A0\uFEFF\u3000]+/,    // Ignore whitespace and unicode No-Break space, half-width space, ideographic space
-        $.block_comment,
+        $._block_comment,
     ],
 
     externals: $ => [
-        $.block_comment,
+        $._block_comment,
     ],
 
     rules: {
@@ -475,7 +475,7 @@ module.exports = grammar({
         ),
 
 
-        comment: $ => token(choice(
+        _comment: $ => token(choice(
             seq('#', /[^\n\r]*/),
         )),
 
