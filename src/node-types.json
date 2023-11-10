@@ -2899,11 +2899,6 @@
     }
   },
   {
-    "type": "filepath_component",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "for_statement",
     "named": true,
     "fields": {},
@@ -3005,11 +3000,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "identifier",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "identifier_list",
@@ -5230,8 +5220,16 @@
     "named": false
   },
   {
+    "type": "filepath_component",
+    "named": true
+  },
+  {
     "type": "for",
     "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
   },
   {
     "type": "if",

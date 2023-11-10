@@ -2,6 +2,7 @@ const decimal = /-?[\p{Nd}][\p{Nd}_]*/u;
 const hexadecimal = /0[xX][0-9a-fA-F_]*[0-9a-fA-F]+/;
 const binary = /0[bB][0-1_]*[0-1]+/;
 
+const IDENTIFIER_CHARS = /[^\x00-\x1F\s:;:`"'@$#.,|^&<=>+\-*/\\%?!~()\[\]{}]+/;
 
 module.exports = grammar({
     name: 'humphrey',
@@ -498,7 +499,9 @@ module.exports = grammar({
             hexadecimal,
             binary),
         filepath_component: _ => /[\p{L}\p{Nd}_]+/u,  // Todo, needs to include ALL valid filename characters
-        identifier: _ => token(/[\p{L}\p{Nd}_]+/u), // Todo, must not match number, must not match single _
+        //identifier: _ => token(/[\p{L}\p{Pc}\p{M}\p{Nd}]+/), // Todo, must not match number, must not match single _
+        //identifier: _ => token(/[^\p{Zs}\p{S}]+/), // Todo, must not match number, must not match single _
+        identifier: _ => token(IDENTIFIER_CHARS), // Todo, must not match number, must not match single _
         meta_item: _ => /\[[^\]]+\]/u,
         underscore: _ => '_',
         

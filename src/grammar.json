@@ -1556,7 +1556,7 @@
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "[\\p{L}\\p{Nd}_]+"
+        "value": "[^\\x00-\\x1F\\s:;:`\"'@$#.,|^&<=>+\\-*/\\\\%?!~()\\[\\]{}]+"
       }
     },
     "meta_item": {

@@ -121,3 +121,40 @@ main:Bob={}
    (identifier))
   (block)))
 
+================================================================================
+simple named function type definition with _
+================================================================================
+
+main_main:Bob={}
+
+--------------------------------------------------------------------------------
+
+(source_file
+ (function_definition
+  (identifier_list
+   (identifier))
+  (type
+   (identifier))
+  (block)))
+
+================================================================================
+simple named function type definition just kanji
+================================================================================
+
+具:Bob={}
+
+--------------------------------------------------------------------------------
+
+(source_file
+ (function_definition
+  (identifier_list
+   (identifier))
+  (type
+   (identifier))
+  (block)))
+
+
+
+
+
+
