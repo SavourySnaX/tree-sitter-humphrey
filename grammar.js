@@ -1,6 +1,7 @@
 const decimal = /-?[\p{Nd}][\p{Nd}_]*/u;
 const hexadecimal = /0[xX][0-9a-fA-F_]*[0-9a-fA-F]+/;
 const binary = /0[bB][0-1_]*[0-1]+/;
+const fpdecimal = /-?[\p{Nd}][\p{Nd}_]*\.[\p{Nd}_]+/u;
 
 const IDENTIFIER_CHARS = /[^\x00-\x1F\s:;:`"'@$#.,|^&<=>+\-*/\\%?!~()\[\]{}]+/;
 
@@ -147,6 +148,7 @@ module.exports = grammar({
             $.alias_type,
             $.function_type,
             $.bit_type,
+            $.fp32_type,
             $.identifier,
         ),
 
@@ -229,6 +231,7 @@ module.exports = grammar({
         ),
 
         bit_type: $ => 'bit',
+        fp32_type: $ => 'fp32',
 
         pointer_type: $ => prec.left(seq(
             $._asterix,
@@ -260,6 +263,7 @@ module.exports = grammar({
             $.bracketed,
             $.identifier,
             $.number,
+            $.floatnumber,
             $.string,
             $.function_call,
             $.subscript,
@@ -498,6 +502,8 @@ module.exports = grammar({
             decimal,
             hexadecimal,
             binary),
+        floatnumber: _ => fpdecimal,
+
         filepath_component: _ => /[\p{L}\p{Nd}_]+/u,  // Todo, needs to include ALL valid filename characters
         //identifier: _ => token(/[\p{L}\p{Pc}\p{M}\p{Nd}]+/), // Todo, must not match number, must not match single _
         //identifier: _ => token(/[^\p{Zs}\p{S}]+/), // Todo, must not match number, must not match single _

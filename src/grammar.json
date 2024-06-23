@@ -385,6 +385,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "fp32_type"
+        },
+        {
+          "type": "SYMBOL",
           "name": "identifier"
         }
       ]
@@ -634,6 +638,10 @@
       "type": "STRING",
       "value": "bit"
     },
+    "fp32_type": {
+      "type": "STRING",
+      "value": "fp32"
+    },
     "pointer_type": {
       "type": "PREC_LEFT",
       "value": 0,
@@ -720,6 +728,10 @@
         {
           "type": "SYMBOL",
           "name": "number"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "floatnumber"
         },
         {
           "type": "SYMBOL",
@@ -1547,6 +1559,10 @@
           "value": "0[bB][0-1_]*[0-1]+"
         }
       ]
+    },
+    "floatnumber": {
+      "type": "PATTERN",
+      "value": "-?[\\p{Nd}][\\p{Nd}_]*\\.[\\p{Nd}_]+"
     },
     "filepath_component": {
       "type": "PATTERN",
