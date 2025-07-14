@@ -76,6 +76,14 @@
           "named": true
         },
         {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
+          "named": true
+        },
+        {
           "type": "modulus",
           "named": true
         },
@@ -260,6 +268,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -399,6 +415,14 @@
         },
         {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
           "named": true
         },
         {
@@ -548,6 +572,14 @@
           "named": true
         },
         {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
+          "named": true
+        },
+        {
           "type": "modulus",
           "named": true
         },
@@ -679,6 +711,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -802,6 +842,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -937,6 +985,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -1060,6 +1116,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -1195,6 +1259,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -1318,6 +1390,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -1453,6 +1533,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -1585,6 +1673,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -1708,6 +1804,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -1843,6 +1947,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -1966,6 +2078,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -2101,6 +2221,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -2224,6 +2352,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -2359,6 +2495,14 @@
           "named": true
         },
         {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
+          "named": true
+        },
+        {
           "type": "modulus",
           "named": true
         },
@@ -2490,6 +2634,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -2613,6 +2765,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -2745,6 +2905,14 @@
         },
         {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
           "named": true
         },
         {
@@ -2929,6 +3097,14 @@
         },
         {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
           "named": true
         },
         {
@@ -3158,22 +3334,7 @@
     }
   },
   {
-    "type": "meta_list",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "meta_item",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "modulus",
+    "type": "logical_and",
     "named": true,
     "fields": {
       "left": {
@@ -3246,6 +3407,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -3372,6 +3541,577 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "logical_or",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "floatnumber",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "floatnumber",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "meta_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "meta_item",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modulus",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "floatnumber",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "floatnumber",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -3519,6 +4259,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -3689,6 +4437,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -3818,6 +4574,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -3953,6 +4717,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -4082,6 +4854,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -4217,6 +4997,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -4343,6 +5131,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -4401,6 +5197,7 @@
   {
     "type": "source_file",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
       "multiple": true,
@@ -4586,6 +5383,14 @@
           "named": true
         },
         {
+          "type": "logical_and",
+          "named": true
+        },
+        {
+          "type": "logical_or",
+          "named": true
+        },
+        {
           "type": "modulus",
           "named": true
         },
@@ -4717,6 +5522,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -4840,6 +5653,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -4975,6 +5796,14 @@
             "named": true
           },
           {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
             "type": "modulus",
             "named": true
           },
@@ -5098,6 +5927,14 @@
           },
           {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
             "named": true
           },
           {
@@ -5304,11 +6141,31 @@
     "named": false
   },
   {
+    "type": "&&",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
     "type": "+",
     "named": false
   },
   {
     "type": "++",
+    "named": false
+  },
+  {
+    "type": ",",
     "named": false
   },
   {
@@ -5332,6 +6189,14 @@
     "named": false
   },
   {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
     "type": ";",
     "named": false
   },
@@ -5344,6 +6209,10 @@
     "named": false
   },
   {
+    "type": "=",
+    "named": false
+  },
+  {
     "type": "==",
     "named": false
   },
@@ -5353,6 +6222,14 @@
   },
   {
     "type": ">=",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
     "named": false
   },
   {
@@ -5408,7 +6285,27 @@
     "named": true
   },
   {
+    "type": "using",
+    "named": false
+  },
+  {
     "type": "while",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "||",
+    "named": false
+  },
+  {
+    "type": "}",
     "named": false
   }
 ]

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
   "name": "humphrey",
   "rules": {
     "source_file": {
@@ -815,6 +816,14 @@
         },
         {
           "type": "SYMBOL",
+          "name": "logical_and"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "logical_or"
+        },
+        {
+          "type": "SYMBOL",
           "name": "negate"
         },
         {
@@ -1490,6 +1499,64 @@
         ]
       }
     },
+    "logical_and": {
+      "type": "PREC_LEFT",
+      "value": "condition",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "FIELD",
+            "name": "left",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_expression"
+            }
+          },
+          {
+            "type": "STRING",
+            "value": "&&"
+          },
+          {
+            "type": "FIELD",
+            "name": "right",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_expression"
+            }
+          }
+        ]
+      }
+    },
+    "logical_or": {
+      "type": "PREC_LEFT",
+      "value": "condition",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "FIELD",
+            "name": "left",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_expression"
+            }
+          },
+          {
+            "type": "STRING",
+            "value": "||"
+          },
+          {
+            "type": "FIELD",
+            "name": "right",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_expression"
+            }
+          }
+        ]
+      }
+    },
     "_comment": {
       "type": "TOKEN",
       "content": {
@@ -1548,7 +1615,8 @@
       "members": [
         {
           "type": "PATTERN",
-          "value": "-?[\\p{Nd}][\\p{Nd}_]*"
+          "value": "-?[\\p{Nd}][\\p{Nd}_]*",
+          "flags": "u"
         },
         {
           "type": "PATTERN",
@@ -1562,11 +1630,13 @@
     },
     "floatnumber": {
       "type": "PATTERN",
-      "value": "-?[\\p{Nd}][\\p{Nd}_]*\\.[\\p{Nd}_]+"
+      "value": "-?[\\p{Nd}][\\p{Nd}_]*\\.[\\p{Nd}_]+",
+      "flags": "u"
     },
     "filepath_component": {
       "type": "PATTERN",
-      "value": "[\\p{L}\\p{Nd}_]+"
+      "value": "[\\p{L}\\p{Nd}_]+",
+      "flags": "u"
     },
     "identifier": {
       "type": "TOKEN",
@@ -1577,7 +1647,8 @@
     },
     "meta_item": {
       "type": "PATTERN",
-      "value": "\\[[^\\]]+\\]"
+      "value": "\\[[^\\]]+\\]",
+      "flags": "u"
     },
     "underscore": {
       "type": "STRING",
@@ -1690,6 +1761,6 @@
     }
   ],
   "inline": [],
-  "supertypes": []
+  "supertypes": [],
+  "reserved": {}
 }
-

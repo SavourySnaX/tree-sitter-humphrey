@@ -284,6 +284,8 @@ module.exports = grammar({
             $.cond_greater,
             $.cond_greater_equal,
             $.cond_inver,
+            $.logical_and,
+            $.logical_or,
             $.negate,
             $.post_inc,
             $.post_dec,
@@ -480,6 +482,23 @@ module.exports = grammar({
             seq(
                 field("left", $._expression),
                 ">=",
+                field("right", $._expression),
+            ),
+        ),
+
+        logical_and: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                "&&",
+                field("right", $._expression),
+            ),
+        ),
+        logical_or: $ => prec.left(
+            "condition",
+            seq(
+                field("left", $._expression),
+                "||",
                 field("right", $._expression),
             ),
         ),
