@@ -303,6 +303,7 @@ module.exports = grammar({
             $.dot,
             $.as,
             $.cond_inver,
+            $.bin_not,
             $.negate,
             $.post_inc,
             $.post_dec,
@@ -427,6 +428,11 @@ module.exports = grammar({
 
         cond_inver: $ => prec.right("unary",seq(
             "!",
+            field("expr", $._expression),
+        )),
+
+        bin_not: $ => prec.right("unary",seq(
+            "~",
             field("expr", $._expression),
         )),
         

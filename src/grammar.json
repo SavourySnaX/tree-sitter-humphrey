@@ -854,6 +854,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "bin_not"
+        },
+        {
+          "type": "SYMBOL",
           "name": "negate"
         },
         {
@@ -1263,6 +1267,27 @@
           {
             "type": "STRING",
             "value": "!"
+          },
+          {
+            "type": "FIELD",
+            "name": "expr",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_expression"
+            }
+          }
+        ]
+      }
+    },
+    "bin_not": {
+      "type": "PREC_RIGHT",
+      "value": "unary",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "~"
           },
           {
             "type": "FIELD",

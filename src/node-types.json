@@ -20,6 +20,10 @@
           "named": true
         },
         {
+          "type": "bin_not",
+          "named": true
+        },
+        {
           "type": "binary_and",
           "named": true
         },
@@ -220,6 +224,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -378,6 +386,10 @@
           "named": true
         },
         {
+          "type": "bin_not",
+          "named": true
+        },
+        {
           "type": "binary_and",
           "named": true
         },
@@ -505,6 +517,158 @@
     }
   },
   {
+    "type": "bin_not",
+    "named": true,
+    "fields": {
+      "expr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "address_of",
+            "named": true
+          },
+          {
+            "type": "as",
+            "named": true
+          },
+          {
+            "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
+            "named": true
+          },
+          {
+            "type": "binary_and",
+            "named": true
+          },
+          {
+            "type": "binary_or",
+            "named": true
+          },
+          {
+            "type": "bracketed",
+            "named": true
+          },
+          {
+            "type": "cond_equal",
+            "named": true
+          },
+          {
+            "type": "cond_greater",
+            "named": true
+          },
+          {
+            "type": "cond_greater_equal",
+            "named": true
+          },
+          {
+            "type": "cond_inver",
+            "named": true
+          },
+          {
+            "type": "cond_less",
+            "named": true
+          },
+          {
+            "type": "cond_less_equal",
+            "named": true
+          },
+          {
+            "type": "cond_not_equal",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "division",
+            "named": true
+          },
+          {
+            "type": "dot",
+            "named": true
+          },
+          {
+            "type": "floatnumber",
+            "named": true
+          },
+          {
+            "type": "function_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "logical_and",
+            "named": true
+          },
+          {
+            "type": "logical_or",
+            "named": true
+          },
+          {
+            "type": "modulus",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "post_dec",
+            "named": true
+          },
+          {
+            "type": "post_inc",
+            "named": true
+          },
+          {
+            "type": "pre_dec",
+            "named": true
+          },
+          {
+            "type": "pre_inc",
+            "named": true
+          },
+          {
+            "type": "product",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtraction",
+            "named": true
+          },
+          {
+            "type": "sum",
+            "named": true
+          },
+          {
+            "type": "underscore",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "binary_and",
     "named": true,
     "fields": {
@@ -522,6 +686,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -664,6 +832,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -815,6 +987,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -954,6 +1130,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -1120,6 +1300,10 @@
           "named": true
         },
         {
+          "type": "bin_not",
+          "named": true
+        },
+        {
           "type": "binary_and",
           "named": true
         },
@@ -1267,6 +1451,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -1406,6 +1594,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -1557,6 +1749,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -1696,6 +1892,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -1847,6 +2047,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -1986,6 +2190,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -2137,6 +2345,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -2285,6 +2497,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -2424,6 +2640,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -2575,6 +2795,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -2714,6 +2938,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -2865,6 +3093,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -3004,6 +3236,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -3155,6 +3391,10 @@
           "named": true
         },
         {
+          "type": "bin_not",
+          "named": true
+        },
+        {
           "type": "binary_and",
           "named": true
         },
@@ -3302,6 +3542,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -3441,6 +3685,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -3589,6 +3837,10 @@
         },
         {
           "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "bin_not",
           "named": true
         },
         {
@@ -3789,6 +4041,10 @@
         },
         {
           "type": "assignment",
+          "named": true
+        },
+        {
+          "type": "bin_not",
           "named": true
         },
         {
@@ -4110,6 +4366,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -4249,6 +4509,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -4400,6 +4664,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -4539,6 +4807,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -4720,6 +4992,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -4859,6 +5135,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -5022,6 +5302,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -5208,6 +5492,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -5353,6 +5641,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -5504,6 +5796,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -5649,6 +5945,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -5800,6 +6100,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -5939,6 +6243,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -6202,6 +6510,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -6341,6 +6653,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -6492,6 +6808,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -6631,6 +6951,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -6782,6 +7106,10 @@
             "named": true
           },
           {
+            "type": "bin_not",
+            "named": true
+          },
+          {
             "type": "binary_and",
             "named": true
           },
@@ -6921,6 +7249,10 @@
           },
           {
             "type": "assignment",
+            "named": true
+          },
+          {
+            "type": "bin_not",
             "named": true
           },
           {
@@ -7360,6 +7692,10 @@
   },
   {
     "type": "}",
+    "named": false
+  },
+  {
+    "type": "~",
     "named": false
   }
 ]
