@@ -8,15 +8,22 @@ const IDENTIFIER_CHARS = /[^\x00-\x1F\s:;:`"'@$#.,|^&<=>+\-*/\\%?!~()\[\]{}]+/;
 module.exports = grammar({
     name: 'humphrey',
 
+    conflicts: $ => [
+        [$.expression, $.subscript],
+    ],
+
     precedences: _ => [
         [
+          "expression",
             "postfix",
             "prefix",
             "unary",
             "multiplication",
             "addition",
+            "binary",
             "condition",
             "as",
+            "subscript",
         ],
     ],
 
@@ -127,7 +134,11 @@ module.exports = grammar({
         ),
 
         meta_list: $ => repeat1(
+          seq(
+            $._openSquare,
             $.meta_item,
+            $._closeSquare,
+          )
         ),
 
         identifier_list: $ => seq(
@@ -139,6 +150,8 @@ module.exports = grammar({
                 )
             )
         ),
+
+        meta_item: $ => $.expression,
 
         type: $ => choice(
             $.array_type,
@@ -257,21 +270,11 @@ module.exports = grammar({
             $.filepath_component,
         ),
 
-
-        expression: $ => $._expression,
-        _expression: $ => choice(
-            $.bracketed,
-            $.identifier,
-            $.number,
-            $.floatnumber,
-            $.string,
-            $.function_call,
-            $.subscript,
-            $.address_of,
-            $.dereference,
-            $.assignment,
-            $.dot,
-            $.as,
+        _binary_expression: $ => choice(
+            $.logical_and,
+            $.logical_or,
+            $.binary_and,
+            $.binary_or,
             $.sum,
             $.subtraction,
             $.division,
@@ -283,16 +286,36 @@ module.exports = grammar({
             $.cond_less_equal,
             $.cond_greater,
             $.cond_greater_equal,
+        ),
+
+        _nonbinary_expression: $ => choice(
+            $.bracketed,
+            $.identifier,
+            $.number,
+            $.floatnumber,
+            $.string,
+            $.underscore,
+            $.function_call,
+            $.subscript,
+            $.address_of,
+            $.dereference,
+            $.assignment,
+            $.dot,
+            $.as,
             $.cond_inver,
-            $.logical_and,
-            $.logical_or,
             $.negate,
             $.post_inc,
             $.post_dec,
             $.pre_inc,
             $.pre_dec,
-            $.underscore,
         ),
+
+        expression: $ => $._expression,
+        
+        _expression: $ => prec("expression",choice(
+          $._binary_expression,
+          $._nonbinary_expression,
+        )),
 
         bracketed: $ => seq(
             $._openParen,
@@ -300,10 +323,10 @@ module.exports = grammar({
             $._closeParen,
         ),
 
-        subscript: $ => prec.right(seq(
-            $.identifier,
+        subscript: $ => prec.right("subscript",seq(
+            field('array',$._expression),
             $._openSquare,
-            $._expression,
+            field('index',$._expression),
             $._closeSquare,
         )),
 
@@ -502,6 +525,22 @@ module.exports = grammar({
                 field("right", $._expression),
             ),
         ),
+        binary_and: $ => prec.left(
+            "binary",
+            seq(
+                field("left", $._expression),
+                "&",
+                field("right", $._expression),
+            ),
+        ),
+        binary_or: $ => prec.left(
+            "binary",
+            seq(
+                field("left", $._expression),
+                "|",
+                field("right", $._expression),
+            ),
+        ),
 
 
         _comment: $ => token(choice(
@@ -527,7 +566,6 @@ module.exports = grammar({
         //identifier: _ => token(/[\p{L}\p{Pc}\p{M}\p{Nd}]+/), // Todo, must not match number, must not match single _
         //identifier: _ => token(/[^\p{Zs}\p{S}]+/), // Todo, must not match number, must not match single _
         identifier: _ => token(IDENTIFIER_CHARS), // Todo, must not match number, must not match single _
-        meta_item: _ => /\[[^\]]+\]/u,
         underscore: _ => '_',
         
         _comma: _ => ',',
