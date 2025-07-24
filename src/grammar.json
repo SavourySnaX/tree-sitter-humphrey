@@ -542,7 +542,7 @@
       }
     },
     "alias_type": {
-      "type": "PREC_LEFT",
+      "type": "PREC_RIGHT",
       "value": 0,
       "content": {
         "type": "SEQ",
@@ -554,21 +554,25 @@
           {
             "type": "REPEAT1",
             "content": {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "_verticalBar"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "struct_type"
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "_alias_member"
             }
           }
         ]
       }
+    },
+    "_alias_member": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "_verticalBar"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "struct_type"
+        }
+      ]
     },
     "enum_type": {
       "type": "SEQ",
@@ -682,7 +686,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "number"
+          "name": "_expression"
         }
       ]
     },

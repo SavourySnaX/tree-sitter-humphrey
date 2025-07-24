@@ -209,13 +209,15 @@ module.exports = grammar({
             $.type,
         )),
 
-        alias_type: $ => prec.left(seq(
+        alias_type: $ => prec.right(seq(
             $.type,
-            repeat1(seq(
-                $._verticalBar,
-                $.struct_type,
-            )),
+            repeat1($._alias_member)
         )),
+
+        _alias_member: $ => seq(
+          $._verticalBar,
+          $.struct_type,
+        ),
 
         enum_type: $ => seq(
             $.type,

@@ -28,7 +28,6 @@ float:fp32
     (type
       (fp32_type))))
 
-
 ================================================================================
 multiple bit type definition
 ================================================================================
@@ -253,6 +252,63 @@ nibbles:[8]bit
                   (number))
                 (type
                   (bit_type)))))
+          (struct_member
+            (identifier_list
+              (identifier))
+            (type
+              (array_type
+                (array_size
+                  (number))
+                (type
+                  (bit_type))))))))))
+
+================================================================================
+packed struct (alias) (2 structs)
+================================================================================
+
+nibbles:[8]bit
+|{
+    nibbleTop:[4]bit
+    nibbleBottom:[4]bit
+}
+|{
+    ok:[8]bit
+}
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (type_definition
+    (identifier_list
+      (identifier))
+    (type
+      (alias_type
+        (type
+          (array_type
+            (array_size
+              (number))
+            (type
+              (bit_type))))
+        (struct_type
+          (struct_member
+            (identifier_list
+              (identifier))
+            (type
+              (array_type
+                (array_size
+                  (number))
+                (type
+                  (bit_type)))))
+          (struct_member
+            (identifier_list
+              (identifier))
+            (type
+              (array_type
+                (array_size
+                  (number))
+                (type
+                  (bit_type))))))
+        (struct_type
           (struct_member
             (identifier_list
               (identifier))
