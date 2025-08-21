@@ -184,12 +184,11 @@ a:=-1+2*3/4+(5+6-2)
               (number)
               (number))
             (number)))
-        (bracketed
-          (subtraction
-            (sum
-              (number)
-              (number))
-            (number)))))))
+        (subtraction
+          (sum
+            (number)
+            (number))
+          (number))))))
 
 ================================================================================
 bodmas identifiers
@@ -213,12 +212,11 @@ a:=-a+b*c/d+(e+f-g)
               (identifier)
               (identifier))
             (identifier)))
-        (bracketed
-          (subtraction
-            (sum
-              (identifier)
-              (identifier))
-            (identifier)))))))
+        (subtraction
+          (sum
+            (identifier)
+            (identifier))
+          (identifier))))))
 
 ================================================================================
 equal

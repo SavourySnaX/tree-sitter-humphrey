@@ -291,7 +291,7 @@ module.exports = grammar({
         ),
 
         _nonbinary_expression: $ => choice(
-            $.bracketed,
+            $._bracketed,
             $.identifier,
             $.number,
             $.floatnumber,
@@ -320,7 +320,7 @@ module.exports = grammar({
           $._nonbinary_expression,
         )),
 
-        bracketed: $ => seq(
+        _bracketed: $ => seq(
             $._openParen,
             $._expression,
             $._closeParen,

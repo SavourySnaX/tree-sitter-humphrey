@@ -686,7 +686,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "_expression"
+          "name": "number"
         }
       ]
     },
@@ -802,7 +802,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "bracketed"
+          "name": "_bracketed"
         },
         {
           "type": "SYMBOL",
@@ -903,7 +903,7 @@
         ]
       }
     },
-    "bracketed": {
+    "_bracketed": {
       "type": "SEQ",
       "members": [
         {
