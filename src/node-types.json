@@ -501,21 +501,6 @@
     }
   },
   {
-    "type": "assignment_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "assignment",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "bin_not",
     "named": true,
     "fields": {
@@ -1272,7 +1257,7 @@
       "required": false,
       "types": [
         {
-          "type": "assignment_statement",
+          "type": "assignment",
           "named": true
         },
         {

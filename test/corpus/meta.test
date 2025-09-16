@@ -60,12 +60,11 @@ WrappedAdd:(a:Int8,b:Int8)(out:Int8)=
             (type
               (identifier))))))
     (block
-      (assignment_statement
-        (assignment
+      (assignment
+        (identifier)
+        (sum
           (identifier)
-          (sum
-            (identifier)
-            (identifier)))))))
+          (identifier))))))
 
 ================================================================================
 meta function call

@@ -78,7 +78,7 @@ enum ts_symbol_identifiers {
   sym_function_definition = 56,
   sym_block = 57,
   sym__statement = 58,
-  sym_assignment_statement = 59,
+  sym__assignment_statement = 59,
   sym_statement_expression = 60,
   sym_if_statement = 61,
   sym_else_statement = 62,
@@ -226,7 +226,7 @@ static const char * const ts_symbol_names[] = {
   [sym_function_definition] = "function_definition",
   [sym_block] = "block",
   [sym__statement] = "_statement",
-  [sym_assignment_statement] = "assignment_statement",
+  [sym__assignment_statement] = "_assignment_statement",
   [sym_statement_expression] = "statement_expression",
   [sym_if_statement] = "if_statement",
   [sym_else_statement] = "else_statement",
@@ -374,7 +374,7 @@ static const TSSymbol ts_symbol_map[] = {
   [sym_function_definition] = sym_function_definition,
   [sym_block] = sym_block,
   [sym__statement] = sym__statement,
-  [sym_assignment_statement] = sym_assignment_statement,
+  [sym__assignment_statement] = sym__assignment_statement,
   [sym_statement_expression] = sym_statement_expression,
   [sym_if_statement] = sym_if_statement,
   [sym_else_statement] = sym_else_statement,
@@ -699,8 +699,8 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = false,
     .named = true,
   },
-  [sym_assignment_statement] = {
-    .visible = true,
+  [sym__assignment_statement] = {
+    .visible = false,
     .named = true,
   },
   [sym_statement_expression] = {
@@ -3356,7 +3356,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(2)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(8),
-    [sym_assignment_statement] = STATE(8),
+    [sym__assignment_statement] = STATE(8),
     [sym_statement_expression] = STATE(8),
     [sym_if_statement] = STATE(8),
     [sym_while_statement] = STATE(8),
@@ -3432,7 +3432,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(3)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(2),
-    [sym_assignment_statement] = STATE(2),
+    [sym__assignment_statement] = STATE(2),
     [sym_statement_expression] = STATE(2),
     [sym_if_statement] = STATE(2),
     [sym_while_statement] = STATE(2),
@@ -3508,7 +3508,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(4)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(8),
-    [sym_assignment_statement] = STATE(8),
+    [sym__assignment_statement] = STATE(8),
     [sym_statement_expression] = STATE(8),
     [sym_if_statement] = STATE(8),
     [sym_while_statement] = STATE(8),
@@ -3584,7 +3584,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(5)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(7),
-    [sym_assignment_statement] = STATE(7),
+    [sym__assignment_statement] = STATE(7),
     [sym_statement_expression] = STATE(7),
     [sym_if_statement] = STATE(7),
     [sym_while_statement] = STATE(7),
@@ -3660,7 +3660,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(6)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(4),
-    [sym_assignment_statement] = STATE(4),
+    [sym__assignment_statement] = STATE(4),
     [sym_statement_expression] = STATE(4),
     [sym_if_statement] = STATE(4),
     [sym_while_statement] = STATE(4),
@@ -3736,7 +3736,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(7)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(8),
-    [sym_assignment_statement] = STATE(8),
+    [sym__assignment_statement] = STATE(8),
     [sym_statement_expression] = STATE(8),
     [sym_if_statement] = STATE(8),
     [sym_while_statement] = STATE(8),
@@ -3812,7 +3812,7 @@ static const uint16_t ts_parse_table[LARGE_STATE_COUNT][SYMBOL_COUNT] = {
   [STATE(8)] = {
     [sym_variable_definition] = STATE(449),
     [sym__statement] = STATE(8),
-    [sym_assignment_statement] = STATE(8),
+    [sym__assignment_statement] = STATE(8),
     [sym_statement_expression] = STATE(8),
     [sym_if_statement] = STATE(8),
     [sym_while_statement] = STATE(8),
@@ -20159,7 +20159,7 @@ static const TSParseActionEntry ts_parse_actions[] = {
   [689] = {.entry = {.count = 1, .reusable = true}}, SHIFT(289),
   [691] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_block, 2, 0, 0),
   [693] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_block, 3, 0, 0),
-  [695] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_assignment_statement, 2, 0, 0),
+  [695] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym__assignment_statement, 2, 0, 0),
   [697] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_while_statement, 3, 0, 0),
   [699] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_local_variable_definition, 2, 0, 0),
   [701] = {.entry = {.count = 1, .reusable = false}}, REDUCE(sym_if_statement, 4, 0, 0),

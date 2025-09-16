@@ -81,11 +81,11 @@ module.exports = grammar({
             $.if_statement,
             $.while_statement,
             $.for_statement,
-            $.assignment_statement,
+            $._assignment_statement,
             $.statement_expression,
         ),
 
-        assignment_statement: $ => seq(
+        _assignment_statement: $ => seq(
             $.assignment,
             ";",
         ),
