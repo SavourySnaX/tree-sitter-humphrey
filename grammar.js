@@ -71,19 +71,24 @@ module.exports = grammar({
 
         block: $ => seq(
             $._openCurly,
-            repeat($.statement),
+            repeat($._statement),
             $._closeCurly,
         ),
 
-        statement: $ => choice(
+        _statement: $ => choice(
             $.local_variable_definition,
             $.return_keyword,
             $.if_statement,
             $.while_statement,
             $.for_statement,
+            $.assignment_statement,
             $.statement_expression,
         ),
 
+        assignment_statement: $ => seq(
+            $.assignment,
+            ";",
+        ),
         statement_expression: $ => seq(
             $.expression,
             ";",
@@ -301,7 +306,6 @@ module.exports = grammar({
             $.subscript,
             $.address_of,
             $.dereference,
-            $.assignment,
             $.dot,
             $.as,
             $.cond_inver,

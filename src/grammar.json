@@ -132,7 +132,7 @@
           "type": "REPEAT",
           "content": {
             "type": "SYMBOL",
-            "name": "statement"
+            "name": "_statement"
           }
         },
         {
@@ -141,7 +141,7 @@
         }
       ]
     },
-    "statement": {
+    "_statement": {
       "type": "CHOICE",
       "members": [
         {
@@ -166,7 +166,24 @@
         },
         {
           "type": "SYMBOL",
+          "name": "assignment_statement"
+        },
+        {
+          "type": "SYMBOL",
           "name": "statement_expression"
+        }
+      ]
+    },
+    "assignment_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "assignment"
+        },
+        {
+          "type": "STRING",
+          "value": ";"
         }
       ]
     },
@@ -839,10 +856,6 @@
         {
           "type": "SYMBOL",
           "name": "dereference"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "assignment"
         },
         {
           "type": "SYMBOL",
